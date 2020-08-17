@@ -105,7 +105,7 @@ totalBill = {}
 allPhoneLines = {}
 
 # Loop through each month's bill skipping the first month which is still in progress
-for i in range(1, 3):
+for i in range(1, totalBillLinks):
 
     # Click on one month's bill, must get link while on page to avoid StaleElementReferenceException
     updateBillLinks = driver.find_elements_by_xpath(
